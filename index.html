@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Trivia Game</title>
-  <script src="jquery-3.3.1.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  
+  <script type="text/javascript"></script>
+  <h1>Trivia Game</h1>
+
+
+
+  <div id="container">
+    <div id="start">Start Quiz</div>
+    <div id="quiz" style="display: none">
+      <div id="htmlTimer">Remaining Time: </div>
+      <div id="question"></div>
+      <div id="choices">
+        <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+        <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+        <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="numCorrect"></div>
+  <div id="numIncorrect"></div>
+  <div id="numUnanswered"></div>
+  <!-- <button type="button" class="btn btn-success">Start</button> -->
 
 
   <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
